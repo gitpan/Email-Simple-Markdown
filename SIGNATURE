@@ -1,5 +1,5 @@
 This file contains message digests of all files listed in MANIFEST,
-signed via the Module::Signature module, version 0.68.
+signed via the Module::Signature module, version 0.73.
 
 To verify the content in this distribution, first make sure you have
 Module::Signature installed, then type:
@@ -14,30 +14,32 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 bd943cc764b20718a4ea4770d2980e4b2a1301f0 AUTHOR_PLEDGE
-SHA1 a569ae75c08d232de2a87e0cbeac97f67e271f60 Build.PL
-SHA1 5da8ca0274bf21f4755c780d6bf4d35da7305832 CONTRIBUTORS
-SHA1 c40660aca739ac1058f9358f856732647758ce50 Changes
+SHA1 ac55a3f8ba5a8ba505df03e63e4fd336f554b609 AUTHOR_PLEDGE
+SHA1 432098b0af044f330ebeb3da2431fffbfd141794 Build.PL
+SHA1 508c5c1e78cca49fa50871be6a664815fd0d7ed7 CONTRIBUTORS
+SHA1 b645febcda521c84f170e498e41c470e0f7b8126 Changes
 SHA1 a3e403014334d1fbaca441ecfe4458344642c9e0 INSTALL
-SHA1 42a9b278ca94a31df654fec186efe74ba9565d7e LICENSE
-SHA1 c4f06aa90e17859ddc32144538d51aafa4917fb6 MANIFEST
-SHA1 a8454364bb48132db196929393b2c883a31c5568 META.json
-SHA1 4b0530a4fa8db3fff35469e73a30121e4ec9ac53 META.yml
-SHA1 a8037238d30b65e8a94c8f676726fe10569b2801 README
-SHA1 3c142a0fa4aaed02921bb16781a634ba390665aa README.mkdn
-SHA1 943b16da53ff3ad1042da0c35268e23179d647c4 lib/Email/Simple/Markdown.pm
-SHA1 24c92b5b5c9ff15e41d885e5a8551957c54d2d6f t/00-compile.t
-SHA1 47c7d88da962e9a10d903466c541d23bb5c07e42 t/000-report-versions-tiny.t
+SHA1 4635555632db4eb10b992acc94a499271d2044ef LICENSE
+SHA1 f6e8b5b20e3602d0ae25baeeb753aedd8116e3ff MANIFEST
+SHA1 d840c0ce1455896bc027225c82a7413537bf7024 META.json
+SHA1 0b84edc4a783bbd0c71eed6564391052fe8828c4 META.yml
+SHA1 5143f53dae4c36b1fa4f482e37af7c06278c3f93 README
+SHA1 8b1ec43a54068c65d7bbf88d4c3e9859f0620f15 README.mkdn
+SHA1 0318297bc00fc9f051d4963561a53c9356f0f567 cpanfile
+SHA1 de58d410b88c486de05da6c53a844dcc0f133c1f doap.xml
+SHA1 14fca46ae46d32708fd5eb305813e1fb295df582 lib/Email/Simple/Markdown.pm
+SHA1 50339aed105c959df70b5987eec1af87c51b4956 t/00-compile.t
+SHA1 260b71b3aff226dfd878ddd9732e6e8bdda0be7f t/000-report-versions-tiny.t
 SHA1 0d2675e80489c1fc0e024dc558a5279a7a69d76b t/basic.t
 SHA1 614e490a97bf09d9f322fb5853527618bf45ff16 t/charset.t
 SHA1 6c8132399e1cbfe7d3eff414f376863384babc03 t/css.t
 SHA1 994650ffaf0d22cdd37b553f8d5aa1e66392b2e5 t/engine.t
 SHA1 dca79201b97699de79daa8b406718c426dcb02df t/filter.t
-SHA1 ec3f84bfd7a9ce3246e7592f4134100c6b5ce02b xt/release/unused-vars.t
+SHA1 d1fe7d94b3edc7847eb187d4ee41f66e19cf8907 xt/release/unused-vars.t
 -----BEGIN PGP SIGNATURE-----
-Version: GnuPG v1.4.11 (GNU/Linux)
+Version: GnuPG v1
 
-iEYEARECAAYFAlJDZ08ACgkQ34Hwf+GwC4z1bQCghiuPjLmIvtqRQ6q6Yz7x/CWG
-GMAAoKt3f3OY0YBp5FC2hOojFoL1+B1D
-=olo1
+iEYEARECAAYFAlRv5gUACgkQ34Hwf+GwC4x4owCfceyQyyzREo/auRGe37qMV/pz
+OhQAn2MVclLy07TO9+BmgIXa4lmw9Oy1
+=5W1t
 -----END PGP SIGNATURE-----

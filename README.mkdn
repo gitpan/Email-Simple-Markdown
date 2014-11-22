@@ -4,7 +4,7 @@ Email::Simple::Markdown - simple email creation with auto text and html multipar
 
 # VERSION
 
-version 0.5.2
+version 0.5.3
 
 # SYNOPSIS
 
@@ -23,41 +23,41 @@ version 0.5.2
 
 # DESCRIPTION
 
-_Email::Simple::Markdown_ behaves almost exactly like [Email::Simple](http://search.cpan.org/perldoc?Email::Simple),
+_Email::Simple::Markdown_ behaves almost exactly like [Email::Simple](https://metacpan.org/pod/Email::Simple),
 excepts for one detail: when its method `as_string()` is invoked, the
 returned string representation of the email has multipart body with a 
 _text/plain_ element (the original body), and a _text/html_ element,
 the markdown rendering of the text body.
 
-The markdown convertion is done using [Text::MultiMarkdown](http://search.cpan.org/perldoc?Text::MultiMarkdown).
+The markdown convertion is done using [Text::MultiMarkdown](https://metacpan.org/pod/Text::MultiMarkdown).
 
 # METHODS
 
-_Email::Simple::Markdown_ inherits all the methods if [Email::Simple](http://search.cpan.org/perldoc?Email::Simple). 
+_Email::Simple::Markdown_ inherits all the methods if [Email::Simple](https://metacpan.org/pod/Email::Simple). 
 In addition, it provides one more method: _with\_markdown_.
 
 ## create( ... ) 
 
-Behaves like [Email::Simple](http://search.cpan.org/perldoc?Email::Simple)'s `create()`, but accepts the following
+Behaves like [Email::Simple](https://metacpan.org/pod/Email::Simple)'s `create()`, but accepts the following
 additional arguments:
 
 - markdown\_engine => $module
 
-See `markdown_engine_set`. If not given, defaults to `auto`.
+    See `markdown_engine_set`. If not given, defaults to `auto`.
 
 - css => $stylesheet
 
-If provided, the html part of the email will be prepended with the given
-stylesheet, wrapped by a _css_ tag.
+    If provided, the html part of the email will be prepended with the given
+    stylesheet, wrapped by a _css_ tag.
 
 - pre\_markdown\_filter => sub { ... }
 
-See `pre_markdown_filter_set`.
+    See `pre_markdown_filter_set`.
 
 - charset => $charset
 
-The character set supplied to `Email::MIME::create()`. By default, no character set 
-is passed.
+    The character set supplied to `Email::MIME::create()`. By default, no character set 
+    is passed.
 
 ## markdown\_engine
 
@@ -66,7 +66,7 @@ Returns the markdown engine used by the object.
 ## markdown\_engine\_set( $module )
 
 Sets the markdown engine to be used by the object. 
-Currently accepts `auto`, [Text::MultiMarkdown](http://search.cpan.org/perldoc?Text::MultiMarkdown) or [Text::Markdown](http://search.cpan.org/perldoc?Text::Markdown).
+Currently accepts `auto`, [Text::MultiMarkdown](https://metacpan.org/pod/Text::MultiMarkdown) or [Text::Markdown](https://metacpan.org/pod/Text::Markdown).
 
 If not specified or set to `auto`, the object will use the first markdown module it finds,
 in the order given in the previous paragraph.
@@ -112,12 +112,12 @@ Sets the charset to be used by the email.
 
 ## with\_markdown()
 
-Returns an [Email::Abstract](http://search.cpan.org/perldoc?Email::Abstract) representation of the email, with 
+Returns an [Email::Abstract](https://metacpan.org/pod/Email::Abstract) representation of the email, with 
 its multipart body.
 
 # AUTHOR
 
-Yanick Champoux <yanick@babyl.dyndns.org> [![endorse](http://api.coderwall.com/yanick/endorsecount.png)](http://coderwall.com/yanick)
+Yanick Champoux <yanick@cpan.org> [![endorse](http://api.coderwall.com/yanick/endorsecount.png)](http://coderwall.com/yanick)
 
 # COPYRIGHT AND LICENSE
 

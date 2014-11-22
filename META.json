@@ -1,10 +1,10 @@
 {
    "abstract" : "simple email creation with auto text and html multipart body",
    "author" : [
-      "Yanick Champoux <yanick@babyl.dyndns.org>"
+      "Yanick Champoux <yanick@cpan.org>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 4.300037, CPAN::Meta::Converter version 2.120921",
+   "generated_by" : "Dist::Zilla version 5.023, CPAN::Meta::Converter version 2.142690",
    "license" : [
       "perl_5"
    ],
@@ -16,12 +16,12 @@
    "prereqs" : {
       "build" : {
          "requires" : {
-            "Module::Build" : "0.3601"
+            "Module::Build" : "0.28"
          }
       },
       "configure" : {
          "requires" : {
-            "Module::Build" : "0.3601"
+            "Module::Build" : "0.28"
          }
       },
       "develop" : {
@@ -47,38 +47,37 @@
             "File::Spec" : "0",
             "IO::Handle" : "0",
             "IPC::Open3" : "0",
-            "Test::More" : "0.88"
+            "Test::More" : "0.88",
+            "perl" : "5.006"
          }
       }
    },
    "provides" : {
       "Email::Simple::Markdown" : {
          "file" : "lib/Email/Simple/Markdown.pm",
-         "version" : "v0.5.2"
+         "version" : "v0.5.3"
       }
    },
    "release_status" : "stable",
    "resources" : {
       "bugtracker" : {
-         "mailto" : "bug-email-simple-markdown at rt.cpan.org",
-         "web" : "http://rt.cpan.org/Public/Dist/Display.html?Name=Email-Simple-Markdown"
+         "web" : "https://github.com/yanick/Email-Simple-Markdown/issues"
       },
-      "homepage" : "http://search.cpan.org/dist/Email-Simple-Markdown/",
+      "homepage" : "https://github.com/yanick/Email-Simple-Markdown",
       "repository" : {
          "type" : "git",
          "url" : "https://github.com/yanick/Email-Simple-Markdown.git",
          "web" : "https://github.com/yanick/Email-Simple-Markdown"
       }
    },
-   "version" : "0.5.2",
+   "version" : "0.5.3",
    "x_author_pledge" : {
       "version" : 1
    },
    "x_authority" : "cpan:YANICK",
    "x_contributors" : [
       "Alessandro Ranellucci <aar@cpan.org>",
-      "Gavin Carr <gavin@openfusion.com.au>",
-      "Yanick Champoux <yanick@cpan.org>"
+      "Gavin Carr <gavin@openfusion.com.au>"
    ]
 }
 

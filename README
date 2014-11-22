@@ -3,7 +3,7 @@ NAME
     multipart body
 
 VERSION
-    version 0.5.2
+    version 0.5.3
 
 SYNOPSIS
         use Email::Simple::Markdown;
@@ -100,7 +100,7 @@ METHODS
     multipart body.
 
 AUTHOR
-    Yanick Champoux <yanick@babyl.dyndns.org>
+    Yanick Champoux <yanick@cpan.org>
 
 COPYRIGHT AND LICENSE
     This software is copyright (c) 2012 by Yanick Champoux.

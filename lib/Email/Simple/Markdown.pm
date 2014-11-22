@@ -2,11 +2,8 @@ package Email::Simple::Markdown;
 BEGIN {
   $Email::Simple::Markdown::AUTHORITY = 'cpan:YANICK';
 }
-{
-  $Email::Simple::Markdown::VERSION = '0.5.2';
-}
 # ABSTRACT: simple email creation with auto text and html multipart body
-
+$Email::Simple::Markdown::VERSION = '0.5.3';
 
 use strict;
 use warnings;
@@ -66,8 +63,10 @@ sub markdown_engine_set {
 }
 
 sub find_markdown_engine {
-    return first { eval "use $_; 1" } @SUPPORTED_ENGINES
-        or die "No markdown engine found";
+    return ( 
+        first { eval "use $_; 1" } @SUPPORTED_ENGINES
+        or die "No markdown engine found" 
+    );
 }
 
 sub _markdown {
@@ -172,13 +171,15 @@ __END__
 
 =pod
 
+=encoding UTF-8
+
 =head1 NAME
 
 Email::Simple::Markdown - simple email creation with auto text and html multipart body
 
 =head1 VERSION
 
-version 0.5.2
+version 0.5.3
 
 =head1 SYNOPSIS
 
@@ -295,7 +296,7 @@ its multipart body.
 
 =head1 AUTHOR
 
-Yanick Champoux <yanick@babyl.dyndns.org>
+Yanick Champoux <yanick@cpan.org>
 
 =head1 COPYRIGHT AND LICENSE
 
